@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  <header>
+      <h1 @click="changeContent">{{content}}</h1>
+  </header>
+  <main>
+  
+  </main>
+  </template>
+  
+  <script lang="js">
+  export default
+  {
+      data()
+      {
+          return 
+          { content: 'WEB'}
+      }
   }
-}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  
+  methods: {
+      changeContent()
+      {this.content='Strona'}
+  }
+  </script>
+  
+  <style>
+  
+  </style>
