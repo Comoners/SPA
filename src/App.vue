@@ -7,7 +7,7 @@
   </main>
   </template>
   
-  <script lang="js">
+  <script lang="ts">
   export default
   {
       data()
